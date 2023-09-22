@@ -1,0 +1,55 @@
+.navigation {
+  padding: 6rem 12rem 3rem 12rem;
+  background-color: $secondary-color;
+
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+
+  &__logo {
+    margin-right: auto;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  &__nav {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    &-link {
+      &:is(:link, :visited) {
+        text-decoration: none;
+        color: $color-white;
+
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: normal;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        transition: all 0.3s ease-out;
+      }
+
+      &:is(:active, :hover) {
+        color: darken($color: $color-white, $amount: 15%);
+      }
+    }
+  }
+}
+
+.image {
+  height: 948px;
+  width: 1037px;
+}
+
+.image .purple-lens-flare {
+  background-blend-mode: hard-light;
+  height: 948px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1037px;
+}

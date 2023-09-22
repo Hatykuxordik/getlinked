@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+  body::-webkit-scrollbar {
+    width: 0.8rem; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #150e28;
+    border: 1px solid rgba(238, 238, 238, 0.2);
+    border-radius: 0.4rem; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff; }
+
+.primary-heading {
+  font-family: Helvetica;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: normal; }
+  .primary-heading--main {
+    display: block; }
+    .primary-heading--main .one-zero {
+      color: #903aff; }
+
+.secondary-heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: normal; }
+
+.italic {
+  font-style: italic;
+  user-select: auto;
+  -webkit-user-select: auto; }
+
+.tertiary-heading {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 10rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 18rem !important; }
+
+.btn {
+  border: none;
+  background: linear-gradient(to right, #fe34b9, #903aff);
+  color: inherit;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 2rem 6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.3s; }
+  .btn:hover {
+    background: linear-gradient(to right, #903aff, #fe34b9);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0 0.1rem #92fcf8, 0 0 0.5rem #92fcf8, 0 0 2.5rem #92fcf8, 0 0 5rem #92fcf8; }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    outline: none;
+    background: linear-gradient(to right, #fe34b9, #903aff);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0 0 #92fcf8, 0 0 0.25rem #92fcf8, 0 0 0.5rem #92fcf8, 0 0 2.5rem #92fcf8; }
+
+.section__hero {
+  overflow: hidden;
+  background-color: #150e28;
+  padding: 4rem 12rem 3rem 12rem;
+  isolation: isolate;
+  border-bottom: 1px solid;
+  border-color: rgba(21, 14, 40, 0.8);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; }
+  .section__hero-container--1 div div:has(.hour, .minute, .second) {
+    font-size: 6.4rem; }
+    .section__hero-container--1 div div:has(.hour, .minute, .second) small {
+      font-size: 1.6rem; }
+  .section__hero-container--2 {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none; }
+    .section__hero-container--2 .h2--absolute {
+      position: absolute;
+      left: -15rem;
+      text-align: end; }
+    .section__hero-container--2 .img-box {
+      position: relative;
+      isolation: isolate; }
+      .section__hero-container--2 .img-box img {
+        width: 100%;
+        position: absolute;
+        top: 10rem;
+        left: -10rem;
+        transform: scale(1.2); }
+      .section__hero-container--2 .img-box .img--man {
+        filter: grayscale(60%); }
+
+header {
+  border-bottom: 1px solid;
+  border-color: rgba(21, 14, 40, 0.8); }
+
+.navigation {
+  padding: 6rem 12rem 3rem 12rem;
+  background-color: #150e28;
+  display: flex;
+  align-items: center;
+  gap: 16rem; }
+  .navigation__logo {
+    margin-right: auto;
+    user-select: none;
+    -webkit-user-select: none; }
+  .navigation__nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem; }
+    .navigation__nav-link:is(:link, :visited) {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: normal;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      transition: all 0.3s ease-out; }
+    .navigation__nav-link:is(:active, :hover) {
+      color: #d9d9d9; }
+
+.image {
+  height: 948px;
+  width: 1037px; }
+
+.image .purple-lens-flare {
+  background-blend-mode: hard-light;
+  height: 948px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1037px; }
