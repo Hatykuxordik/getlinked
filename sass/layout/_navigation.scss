@@ -34,22 +34,8 @@
       }
 
       &:is(:active, :hover) {
-        color: darken($color: $color-white, $amount: 15%);
+        color: darken($color: $color-white, $amount: 45%);
       }
     }
   }
-}
-
-.image {
-  height: 948px;
-  width: 1037px;
-}
-
-.image .purple-lens-flare {
-  background-blend-mode: hard-light;
-  height: 948px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 1037px;
 }

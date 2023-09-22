@@ -1,67 +1,91 @@
 .section__hero {
-  overflow: hidden;
-  background-color: $secondary-color;
-  padding: 4rem 12rem 3rem 12rem;
-  isolation: isolate;
+  position: relative;
 
-  border-bottom: 1px solid;
-  border-color: rgba(21, 14, 40, 0.8);
+  &-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
 
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+    background-color: $secondary-color;
+    padding: 4rem 12rem 3rem 12rem;
+    overflow: hidden;
 
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+    &--1 {
+      z-index: 99;
 
-  &-container--1 {
-    // width: 60%;
+      .spark {
+        margin-left: -1.5rem;
+      }
 
-    div {
-      div:has(.hour, .minute, .second) {
-        font-size: 6.4rem;
+      div {
+        div:has(.hour, .minute, .second) {
+          font-size: 6.4rem;
+          user-select: none;
+          -webkit-user-select: none;
 
-        small {
-          font-size: 1.6rem;
+          small {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .purple-lens {
+        top: -40%;
+        left: -2%;
+        z-index: -1;
+      }
+    }
+
+    &--2 {
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+
+      .purple-lens {
+        height: 95rem;
+        width: 99rem;
+        top: -10%;
+        left: -60%;
+        z-index: 0;
+        transform: rotate(-180deg) scale(1.2);
+      }
+
+      .h2--absolute {
+        position: absolute;
+        left: -15rem;
+        z-index: 99;
+
+        text-align: end;
+      }
+
+      .img-box {
+        position: relative;
+
+        img {
+          width: 100%;
+          position: absolute;
+          top: 10rem;
+          left: -15%;
+          transform: scale(1.2);
+          z-index: 3;
+          // mix-blend-mode: luminosity;
+        }
+
+        .img--man {
+          mix-blend-mode: luminosity;
+          z-index: 0;
+        }
+
+        .img--metrix {
+          z-index: 0;
+        }
+
+        .img--absolute {
+          width: 80%;
+          left: -6%;
+          // opacity: 70%;
+          mix-blend-mode: hard-light;
         }
       }
     }
-  }
-
-  &-container--2 {
-    // width: 40%;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-
-    .h2--absolute {
-      position: absolute;
-      left: -15rem;
-
-      text-align: end;
-    }
-
-    .img-box {
-      position: relative;
-      isolation: isolate;
-
-      img {
-        width: 100%;
-        position: absolute;
-        top: 10rem;
-        left: -10rem;
-        transform: scale(1.2);
-      }
-
-      .img--man {
-        filter: grayscale(60%);
-      }
-    }
-
-    // .img--absolute {
-    //   position: absolute;
-    //   z-index: 1;
-    //   inset: 0;
-    // }
   }
 }

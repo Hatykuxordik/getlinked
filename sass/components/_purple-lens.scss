@@ -1,0 +1,13 @@
+.purple-lens {
+  height: 94rem;
+  width: 103rem;
+  position: absolute;
+  pointer-events: none;
+
+  &-flare {
+    background-blend-mode: hard-light;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: screen;
+  }
+}

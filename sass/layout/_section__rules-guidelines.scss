@@ -1,0 +1,55 @@
+.section__rules-guidelines {
+  padding: 6rem 12rem 3rem 12rem;
+  background-color: $secondary-color;
+
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+
+  gap: 15rem;
+
+  &-img {
+    flex-basis: 50%;
+  }
+
+  &-img-box {
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+
+    .ellipse {
+      position: absolute;
+      top: 16%;
+      right: 19%;
+      z-index: -1;
+    }
+  }
+
+  &-text {
+    flex-basis: 50%;
+
+    &__header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .tertiary-heading span {
+        display: block;
+        color: $primary-color--2;
+        margin-top: -2rem;
+      }
+
+      .star {
+        position: absolute;
+        bottom: -200%;
+        right: -20%;
+      }
+
+      .star1 {
+        position: absolute;
+        top: -30%;
+        left: 50%;
+      }
+    }
+  }
+}
