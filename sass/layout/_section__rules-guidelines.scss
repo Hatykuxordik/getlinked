@@ -1,5 +1,5 @@
 .section__rules-guidelines {
-  padding: 6rem 12rem 3rem 12rem;
+  padding: 4rem 12rem 3rem 12rem;
   background-color: $secondary-color;
 
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
@@ -15,6 +15,10 @@
     position: relative;
     isolation: isolate;
     text-align: center;
+
+    .rules {
+      width: 100%;
+    }
 
     .ellipse {
       position: absolute;
